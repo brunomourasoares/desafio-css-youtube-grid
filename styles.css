@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+  
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+nav {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 50px 100px minmax(500px, auto) 100px;
+  gap: 5px;
+}
+
+.botao_menu {
+  justify-self: start;
+}
+
+.icone_youtube {
+  justify-self: start;
+}
+
+.search_bar {
+  justify-self: center;
+  padding: 5px 50px 0px 50px;
+}
+
+.search_bar input {
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 100px;
+  border-color: rgb(2, 2, 2);
+  padding: 10px 10px 10px 10px;
+  min-width: 500px;
+  max-width: 800px;
+}
+
+.right_buttons {
+  justify-self: end;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 14% 86%;
+}
+
+.menu_completo {
+  padding: 30px 20px;
+  font-size: 15px;
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: 50px 150px;
+  gap: 10px 0px; 
+}
+
+.menu {
+  align-self: center;
+}
+
+.menu_inicio {
+  align-self: center;
+  font-weight: 700;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 250px;
+  gap: 50px;
+  padding-top: 30px;
+  padding-left: 50px;
+  background-color: rgb(255, 254, 254);
+}
+
+.card_interno {
+  display: grid;
+  grid-template-columns: 60px 200px;
+  grid-template-rows: 180px 40px 40px;
+}
+
+.card_image {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+}
+
+.card_titulo {
+  font-weight: 500;
+  grid-column-start: 2;
+  grid-column-end: span 2;
+}
+
+.card_status {
+  color: rgb(170, 171, 172);
+  font-size: 15px;
+  padding-top: 15px;
+  grid-column-start: 2;
+  grid-column-end: span 1;
+}
